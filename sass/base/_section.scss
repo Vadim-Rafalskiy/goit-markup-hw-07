@@ -1,0 +1,12 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &_doing {
+        padding-top: 0;
+    }
+    
+    &_team {
+        background-color: var(--background-color-secondary);
+    }
+}

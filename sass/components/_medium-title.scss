@@ -1,0 +1,13 @@
+.medium-title {
+    font-size: 36px;
+    line-height: 1.17;
+    /* line-height: 42px;   */
+    text-align: center;
+    letter-spacing: var(--letter-spacing-priority);
+
+    color: var(--font-color-secondary);
+
+    &_margin-b {
+        margin-bottom: 50px;
+    }
+}
