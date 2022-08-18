@@ -4,11 +4,8 @@
     
     &__text {
         margin-bottom: 12px;
-    
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
         text-align: center;
+        @include font(20px, 700, 23px);        
         letter-spacing: var(--letter-spacing-priority);
     
         color: var(--font-color-secondary);
@@ -17,9 +14,7 @@
     &__desc {
         display: block;
     
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
+        @include font(12px, 400, 14px);       
         letter-spacing: 0.01em;
     
         margin-bottom: 4px;
@@ -91,9 +86,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 400, 16px);    
     letter-spacing: 0.01em;
 
     transition-property: border-color;
@@ -106,9 +99,7 @@
     }
     
     &::placeholder {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
+        @include font(14px, 400, 16px);        
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);
@@ -121,9 +112,7 @@
     align-items: center;
     margin-bottom: 30px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 400, 24px);    
     letter-spacing: var(--letter-spacing-priority);
     
     &::before {

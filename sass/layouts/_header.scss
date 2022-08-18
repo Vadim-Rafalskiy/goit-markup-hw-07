@@ -1,9 +1,7 @@
 .page-header {
     border-bottom: 1px solid #ececec;
 
-    font-weight: 500;
-    font-size: var(--font-size-priority-14);
-    line-height: var(--line-height-priority);
+    @include font(14px, 500, 16px);    
     letter-spacing: 0.02em;
 }
 

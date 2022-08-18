@@ -1,8 +1,6 @@
 .logo {
     font-family: var(--font-family-secodary);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 700, 31px);
     letter-spacing: var(--letter-spacing-priority);
     color: var(--color-accent);
 

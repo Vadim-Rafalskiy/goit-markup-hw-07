@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--background-color-fotter);
+    background-color: var(--background-color-footer);
 }
 
 .footer {
@@ -15,10 +15,8 @@
         &__text {
             margin-bottom: 20px;
             color: var(--color-white);
-        
-            font-weight: 700;
-            font-size: var(--font-size-priority-14);
-            line-height: var(--line-height-priority);
+            
+            @include font(14px, 700, 16px);            
             letter-spacing: var(--letter-spacing-priority);
             text-transform: uppercase;
         }
@@ -39,8 +37,7 @@
 
 .address-list {
     font-style: normal;
-    font-size: var(--font-size-priority-14);
-    line-height: 1.72;
+    @include font(14px, false, 24px);    
     letter-spacing: var(--letter-spacing-priority);
 
     transition-property: color;
@@ -53,10 +50,9 @@
     
     &__link {
         font-style: normal;
-        font-size: var(--font-size-priority-14);
-        line-height: 1.72;
+        @include font(14px, false, 24px);        
         letter-spacing: var(--letter-spacing-priority);
-        color: var(--font-color-fotter);
+        color: var(--font-color-footer);
     
         transition-property: color;
         transition-duration: var(--standart-transition-time);
@@ -84,9 +80,7 @@
     &__desc {
         display: block;
         margin-bottom: 20px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
+        @include font(14px, 700, 16px);        
         letter-spacing: var(--letter-spacing-priority);
         text-transform: uppercase;
     
@@ -98,9 +92,7 @@
         padding: 15px 16px;
         margin-right: 12px;
     
-        font-weight: 400;
-        font-size: var(--font-size-secondary-16);
-        line-height: 1.25;
+        @include font(16px, 400, 20px);        
         letter-spacing: var(--letter-spacing-priority);
         color: var(--color-white);
     
@@ -111,9 +103,7 @@
     }
     
     &__input::placeholder {
-        font-weight: 400;
-        font-size: var(--font-size-secondary-16);
-        line-height: 1.25;
+        @include font(16px, 400, 20px);
         letter-spacing: var(--letter-spacing-priority);
     
         color: rgba(255, 255, 255, 0.6);

@@ -19,22 +19,19 @@
     
     &__name {
         margin-bottom: 10px;
-    
-        color: var(--font-color-secondary);
-    
         text-align: center;
-        font-weight: 500;
-        font-size: var(--font-size-secondary-16);
-        line-height: 1.19;
+    
+        @include font(16px, 500, 19px);        
         letter-spacing: var(--letter-spacing-priority);
+        
+        color: var(--font-color-secondary);
     }
     
     &__text {
-        text-align: center;
         margin-bottom: 16px;
+        text-align: center;
     
-        font-size: var(--font-size-secondary-16);
-        line-height: 1.19;
+        @include font(16px, false, 19px);       
         letter-spacing: var(--letter-spacing-priority);
     }
 }

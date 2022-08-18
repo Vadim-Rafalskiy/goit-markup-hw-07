@@ -20,8 +20,7 @@
         left: 0;
         bottom: 0;
     
-        font-size: 14px;
-        line-height: 1.14;
+        @include font(14px, false, 16px);        
         letter-spacing: var(--letter-spacing-priority);
         text-transform: uppercase;
     

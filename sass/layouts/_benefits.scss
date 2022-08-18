@@ -30,15 +30,13 @@
     
         color: var(--font-color-secondary);
     
-        font-size: var(--font-size-priority-14);
-        line-height: var(--line-height-priority);
+        @include font(14px, false, 16px);        
         letter-spacing: var(--letter-spacing-priority);
         text-transform: uppercase;
     }
     
     &__text {
-        font-size: var(--font-size-priority-14);
-        line-height: 1.71;
+        @include font(14px, false, 24px);        
         letter-spacing: var(--letter-spacing-priority);
     }
 }
