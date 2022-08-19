@@ -14,13 +14,14 @@
     background-color: #2f303a;
     background-size: cover;
 
-    &__title {
-        margin-bottom: 30px;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+
+    @include font(44px, 900, 60px);        
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     
-        @include font(44px, 900, 60px);        
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        
-        color: var(--color-white);
-    }
+    color: var(--color-white);
 }
